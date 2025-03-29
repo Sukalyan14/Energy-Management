@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{customer}-{entry_date}-{##}",
+ "creation": "2025-03-29 00:25:58.845175",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "purchase_date",
+  "entry_date",
+  "column_break_samhv",
+  "kw_reading",
+  "kwh_reading",
+  "section_break_fjqda",
+  "is_low_tariff",
+  "calculation_entry"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.custom_purchase_date",
+   "fieldname": "purchase_date",
+   "fieldtype": "Date",
+   "label": "Purchase Date",
+   "read_only": 1
+  },
+  {
+   "description": "This date cannot be before purchase date",
+   "fieldname": "entry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Entry Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_samhv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kw_reading",
+   "fieldtype": "Float",
+   "label": "KW Reading",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kwh_reading",
+   "fieldtype": "Float",
+   "label": "KWH Reading",
+   "reqd": 1
+  },
+  {
+   "description": "Low Tariff Period is between 23:00 to 5:59 and High Tariff Period is between 6:00 to 22:59",
+   "fieldname": "section_break_fjqda",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_low_tariff",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Is Low Tariff"
+  },
+  {
+   "fieldname": "calculation_entry",
+   "fieldtype": "Link",
+   "label": "Calculation Entry",
+   "options": "Solar Energy Calculation Entry",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-29 01:30:40.346420",
+ "modified_by": "Administrator",
+ "module": "Test Sukalyan",
+ "name": "Power Consumption Entry",
+ "name_case": "Title Case",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

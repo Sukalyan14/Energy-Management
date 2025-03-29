@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{customer}-{year}",
+ "creation": "2025-03-28 14:59:59.863862",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "calculation_date",
+  "column_break_tvtyj",
+  "year",
+  "section_break_kid1s",
+  "calculation_series",
+  "monthly_results",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "calculation_date",
+   "fieldtype": "Date",
+   "label": "Calculation Date"
+  },
+  {
+   "fieldname": "calculation_series",
+   "fieldtype": "Int",
+   "label": "Calculation Series",
+   "read_only": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year",
+   "length": 4
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Solar Energy Calculation Entry",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_tvtyj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kid1s",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "monthly_results",
+   "fieldtype": "Table",
+   "label": "Montly Results",
+   "options": "Monthly Power And Tariff Result",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-29 05:25:48.207701",
+ "modified_by": "Administrator",
+ "module": "Test Sukalyan",
+ "name": "Solar Energy Calculation Entry",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
