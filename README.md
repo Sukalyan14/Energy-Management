@@ -24,7 +24,8 @@ For this project, Frappe Docker is being used to set up the environment. Follow 
 
 5. After installation, press `Ctrl+Shift+P` to open the command palette and select "Dev Containers: Reopen in Container".
 
-6. Once inside the container, verify dependencies and their versions in the terminal:
+6. Once inside the container, verify dependencies and their versions:
+   ```bash
    git status
    node -v
    python --version
