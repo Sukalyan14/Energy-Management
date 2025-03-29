@@ -11,27 +11,34 @@
   "customer",
   "calculation_date",
   "column_break_tvtyj",
+  "purchase_amount",
   "year",
   "section_break_kid1s",
   "calculation_series",
   "monthly_results",
+  "roi_percent",
   "amended_from"
  ],
  "fields": [
   {
    "fieldname": "customer",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer"
+   "options": "Customer",
+   "reqd": 1
   },
   {
    "fieldname": "calculation_date",
    "fieldtype": "Date",
-   "label": "Calculation Date"
+   "in_list_view": 1,
+   "label": "Calculation Date",
+   "reqd": 1
   },
   {
    "fieldname": "calculation_series",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "Calculation Series",
    "read_only": 1
   },
@@ -65,12 +72,23 @@
    "label": "Montly Results",
    "options": "Monthly Power And Tariff Result",
    "read_only": 1
+  },
+  {
+   "fetch_from": "customer.custom_purchase_amount",
+   "fieldname": "purchase_amount",
+   "fieldtype": "Float",
+   "label": "Purchase Amount"
+  },
+  {
+   "fieldname": "roi_percent",
+   "fieldtype": "Float",
+   "label": "ROI Percent"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-29 12:43:41.589048",
+ "modified": "2025-03-29 16:58:53.642535",
  "modified_by": "Administrator",
  "module": "Test Sukalyan",
  "name": "Solar Energy Calculation Entry",

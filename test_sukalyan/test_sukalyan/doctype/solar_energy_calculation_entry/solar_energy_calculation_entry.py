@@ -19,10 +19,11 @@ class SolarEnergyCalculationEntry(Document):
 			
 			## If not data was found or record being created for the first time. To prevent None 
 			if not last_series:
-				# print("n\n\n\nhere" , last_series[0][0] , doc.calculation_series)
 				doc.calculation_series = last_series[0][0] + 1	
 			
 		calculate_monthly_results(doc)
+		
+		calculate_roi(doc)
 
 def calculate_monthly_results(doc):
 	
@@ -83,5 +84,20 @@ def calculate_monthly_results(doc):
 			"total_tariff":low_tariff_cost + high_tarif_cost
 		})
 
+def calculate_roi(doc):
+	## Checking monthly results
+	if not doc.monthly_results:
+		frappe.msgprint("No monthly results available for ROI calculation")
+		return
+	
+	avg_savings = sum(i.total_tariff for i in doc.monthly_results)
 
+	## Negative or zero purchase amount
+	if doc.purchase_amount <= 0:
+		frappe.throw("Purchase amount must be greater than 0")
 
+	roi_percent = (avg_savings/doc.purchase_amount) * 100
+
+	doc.roi_percent = roi_percent
+
+	
