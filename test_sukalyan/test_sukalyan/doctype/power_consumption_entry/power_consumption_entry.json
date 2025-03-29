@@ -81,7 +81,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-29 01:30:40.346420",
+ "modified": "2025-03-29 12:43:26.173235",
  "modified_by": "Administrator",
  "module": "Test Sukalyan",
  "name": "Power Consumption Entry",
@@ -100,6 +100,43 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Sales Master Manager",
+   "select": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "read": 1,
+   "role": "Sales Manager",
+   "select": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "read": 1,
+   "role": "Sales User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Accounts Manager",
+   "select": 1
+  },
+  {
+   "export": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "select": 1
   }
  ],
  "sort_field": "modified",

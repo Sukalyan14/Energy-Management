@@ -1,0 +1,41 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2025-03-29 14:33:26.528032",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2025-03-29 14:42:00.146784",
+ "modified_by": "Administrator",
+ "module": "Test Sukalyan",
+ "name": "Year Tariff Cost",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Solar Energy Calculation Entry",
+ "report_name": "Year Tariff Cost",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Sales Master Manager"
+  },
+  {
+   "role": "Sales User"
+  }
+ ]
+}

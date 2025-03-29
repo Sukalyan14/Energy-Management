@@ -1,0 +1,99 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"nG-EI4FcN5\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Energy And Tariff</span>\",\"col\":12}},{\"id\":\"Y-P7A1Qe2K\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Yearly Power Consumption\",\"col\":6}},{\"id\":\"ppiXOuHFOu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Yearly Tariff Costs\",\"col\":6}},{\"id\":\"AhTlx7heOV\",\"type\":\"card\",\"data\":{\"card_name\":\"Elements\",\"col\":4}}]",
+ "creation": "2025-03-29 14:43:57.354169",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-energy-points",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Energy And Tariff",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Elements",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Solar Power Data Entry",
+   "link_count": 0,
+   "link_to": "Power Consumption Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Solar Power Calculation Entry",
+   "link_count": 0,
+   "link_to": "Solar Energy Calculation Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-03-29 14:49:29.866101",
+ "modified_by": "Administrator",
+ "module": "Test Sukalyan",
+ "name": "Energy And Tariff",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Sales Master Manager"
+  },
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  }
+ ],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Yearly Power Consumption",
+   "link_to": "Year Power Consumption",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Yearly Tariff Costs",
+   "link_to": "Year Tariff Cost",
+   "type": "Report"
+  }
+ ],
+ "title": "Energy And Tariff"
+}

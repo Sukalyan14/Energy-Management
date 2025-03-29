@@ -2,7 +2,7 @@
 // For license information, please see license.txt
 /* eslint-disable */
 
-frappe.query_reports["Yearly Power Consumption And Tariffs"] = {
+frappe.query_reports["Year Power Consumption"] = {
 	"filters": [
 		{
 			fieldname: 'customer',
@@ -12,9 +12,9 @@ frappe.query_reports["Yearly Power Consumption And Tariffs"] = {
 		},
 		{
 			fieldname: 'year',
-			label:_('Year'),
+			label:__('Year'),
 			fieldtype: 'Int',
-			// length:4
+			default: new Date().getFullYear() 
 		}
 	]
 };
