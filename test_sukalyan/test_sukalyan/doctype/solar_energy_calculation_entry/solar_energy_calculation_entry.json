@@ -82,13 +82,13 @@
   {
    "fieldname": "roi_percent",
    "fieldtype": "Float",
-   "label": "ROI Percent"
+   "label": "ROI Percent for year"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-29 16:58:53.642535",
+ "modified": "2025-03-29 17:12:49.939484",
  "modified_by": "Administrator",
  "module": "Test Sukalyan",
  "name": "Solar Energy Calculation Entry",
